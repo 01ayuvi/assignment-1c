@@ -1,109 +1,166 @@
-activity6
-
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Basic styling for the form */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(193, 229, 229); /* Set background to aqua green */
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <h2>Sign Up</h2>
-  <p>Please fill in this form to create an account!</p>
-  <form action="login.html" method="POST">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
-    
-    <label for="email">Email Address:</label><br>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-    
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
-    
-    <label for="confirm_password">Confirm Password:</label><br>
-    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required><br><br>
-    
-    <input type="checkbox" id="terms" name="terms" required>
-    <label for="terms">
-      I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
-    </label><br><br>
-    
-    <button type="submit">Sign Up</button>
-  </form>
-  <p>Already have an account? <a href="login.html">Sign In</a></p>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <p>Please fill in this form to create an account!</p>
+        <form action="#" method="POST">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required><br><br>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">
+                I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+            </label><br><br>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#">Sign In</a></p>
+    </div>
 </body>
 </html>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form with HTML5 Elements</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Basic styling for the form */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(194, 196, 240); /* Set background to aqua blue */
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <h2>Form with HTML5 Elements</h2>
-  
-  <form action="#" method="POST">
-    <!-- Text Box -->
-    <label for="textbox">Text Box:</label>
-    <input type="text" id="textbox" name="textbox" placeholder="Enter text here" required><br><br>
-    
-    <!-- Radio Buttons -->
-    <fieldset>
-      <legend>Radio Buttons:</legend>
-      <input type="radio" id="radio1" name="radioGroup" value="Option1" required>
-      <label for="radio1">Option 1</label><br>
-      <input type="radio" id="radio2" name="radioGroup" value="Option2">
-      <label for="radio2">Option 2</label><br>
-      <input type="radio" id="radio3" name="radioGroup" value="Option3">
-      <label for="radio3">Option 3</label><br>
-    </fieldset><br>
-    
-    <!-- Check Boxes -->
-    <fieldset>
-      <legend>Check Boxes:</legend>
-      <input type="checkbox" id="checkbox1" name="checkboxGroup" value="Check1">
-      <label for="checkbox1">Check 1</label><br>
-      <input type="checkbox" id="checkbox2" name="checkboxGroup" value="Check2">
-      <label for="checkbox2">Check 2</label><br>
-      <input type="checkbox" id="checkbox3" name="checkboxGroup" value="Check3">
-      <label for="checkbox3">Check 3</label><br>
-    </fieldset><br>
-    
-    <!-- Selection Box with size -->
-    <label for="selection">Selection Box (size 3):</label>
-    <select id="selection" name="selection" size="3">
-      <option value="Option1">Option 1</option>
-      <option value="Option2">Option 2</option>
-      <option value="Option3">Option 3</option>
-      <option value="Option4">Option 4</option>
-    </select><br><br>
-    
-    <!-- Option Box (Drop-down) -->
-    <label for="dropdown">Option Box:</label>
-    <select id="dropdown" name="dropdown">
-      <option value="Option1">Option 1</option>
-      <option value="Option2">Option 2</option>
-      <option value="Option3">Option 3</option>
-    </select><br><br>
-    
-    <!-- TextArea Box -->
-    <label for="textarea">TextArea Box:</label><br>
-    <textarea id="textarea" name="textarea" rows="4" cols="30" placeholder="Enter your comments"></textarea><br><br>
-    
-    <!-- Datalist -->
-    <label for="datalistInput">Datalist:</label>
-    <input list="options" id="datalistInput" name="datalistInput">
-    <datalist id="options">
-      <option value="Option 1">
-      <option value="Option 2">
-      <option value="Option 3">
-    </datalist><br><br>
-    
-    <!-- Submit Button -->
-    <button type="submit">Submit</button>
-  </form>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <input type="checkbox" id="showPassword" name="showPassword">
+            <label for="showPassword">Show Password</label><br><br>
+
+            <button type="submit">SIGN IN</button>
+        </form>
+        <p>Forgot Username/Password? <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
 </body>
 </html>
 
